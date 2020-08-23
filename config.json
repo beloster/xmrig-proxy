@@ -1,0 +1,45 @@
+{
+    "access-log-file": null,
+    "access-password": "proxypass",
+    "algo-ext": false,
+    "api": {
+        "id": 1,
+        "worker-id": 1
+    },
+    "http": {
+        "enabled": false,
+        "host": "192.168.2.117",
+        "port": 3332,
+        "access-token": "test",
+        "restricted": false
+    },
+    "background": false,
+    "bind": [
+        "127.0.0.1:3333"
+    ],
+    "colors": true,
+    "custom-diff": null,
+    "donate-level": 1,
+    "log-file": "./proxy.log",
+    "mode": "simple",
+    "pools": [
+        {
+            "url": "192.168.2.100:3416",
+            "user": "epicuser;worker1",
+            "pass": "supersecret",
+            "algo": "randomx/epic",
+            "rig-id": null,
+            "keepalive": true,
+            "enabled": true,
+            "tls": false,
+            "tls-fingerprint": null,
+            "daemon": false
+        }
+    ],
+    "retries": 10000,
+    "retry-pause": 5,
+    "syslog": false,
+    "workers": true,
+    "user-agent": "xmrig/v-epic-0.0.1",
+
+}
